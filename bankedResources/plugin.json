@@ -1,0 +1,12 @@
+{
+  "name": "Banked Resources",
+  "version": "1.0.0",
+  "contactEmailAddress": "turnipstorm96@gmail.com",
+  "hasSettingsIcon": false,
+  "hasRibbonIcon": true,
+  "requiredPermissions": ["chatAccess"],
+  "requiredDependencies": {
+    "prettyui": 6398181
+  },
+  "optionalDependencies": {}
+}
