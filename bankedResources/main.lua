@@ -98,19 +98,28 @@ local regularItemsList = {
 	{ slot = eternalPlankSlot, 				key = "PLANK_ETERNAL", 								name = "EternalPlank" },
 	
 	--Bones
+	--Normal
 	{ slot = bonesSlot, 					key = "BONES",				 						name = "Bones" },
+	{ slot = burntBonesSlot, 				key = "BONES_BURNT",				 				name = "BurntBones" },
 	{ slot = bigBonesSlot, 					key = "BIG_BONES", 									name = "BigBones" },
+	{ slot = jogreBonesSlot, 				key = "TBWT_JOGRE_BONES", 							name = "JogreBones" },
+	{ slot = zOurgBonesSlot, 				key = "ZOGRE_ANCESTRAL_BONES_OURG", 				name = "zOurgBones" },
+	{ slot = ourgBonesSlot, 				key = "OURG_BONES", 								name = "OurgBones" },
+	{ slot = airutBonesSlot, 				key = "HOTM_CREATURE_BONES", 						name = "AirutBones" },
+	--Animal
+	{ slot = batBonesSlot, 					key = "BAT_BONES", 									name = "BatBones" },
+	{ slot = wolfBonesSlot, 				key = "WOLF_BONES", 								name = "WolfBones" },
 	{ slot = dagBonesSlot, 					key = "DAGANNOTH_KING_BONES", 						name = "DagBones" },
 	{ slot = dinoBonesSlot, 				key = "DINOSAUR_BONES", 							name = "DinoBones" },
-	{ slot = airutBonesSlot, 				key = "HOTM_CREATURE_BONES", 						name = "AirutBones" },
-	{ slot = wyvernBonesSlot, 				key = "WYVERN_BONES", 								name = "WyvernBones" },
-	{ slot = ourgBonesSlot, 				key = "OURG_BONES", 								name = "OurgBones" },
+	--Dragon
 	{ slot = babyDragBonesSlot, 			key = "BABYDRAGON_BONES", 							name = "BabyBones" },
+	{ slot = wyvernBonesSlot, 				key = "WYVERN_BONES", 								name = "WyvernBones" },
 	{ slot = dragBonesSlot, 				key = "DRAGON_BONES", 								name = "DragBones" },
 	{ slot = hardDragBonesSlot, 			key = "ADAMANT_DRAGON_BONES", 						name = "HardDragBones" },
-	{ slot = frostDragBonesSlot, 			key = "FROST_DRAGON_BONES", 						name = "FrostDragBones" },
 	{ slot = dragkinBonesSlot, 				key = "DRAGONKIN_BONES", 							name = "DragonkinBones" },
+	{ slot = frostDragBonesSlot, 			key = "FROST_DRAGON_BONES", 						name = "FrostDragBones" },
 	{ slot = reinforcedDragBonesSlot, 		key = "RUNE_DRAGON_BONES", 							name = "ReinforcedDragBones" },
+	--Special
 	{ slot = longBonesSlot, 				key = "DORGESH_CONSTRUCTION_BONE", 					name = "LongBones" },
 	{ slot = curvedBonesSlot, 				key = "DORGESH_CONSTRUCTION_BONE_CURVED", 			name = "CurvedBones" },
 	{ slot = chewedBonesSlot, 				key = "BRUT_BARBARIAN_BONES", 						name = "ChewedBones" },
@@ -214,6 +223,34 @@ local regularItemsList = {
 	{ slot = hastyWhirligigShellSlot,		key = "DUEL_ARENA_REMOVAL_SCARAB_SHELL_PURPLE",		name = "HastyWhirligigShell" },
 	{ slot = speedyWhirligigShellSlot,		key = "DUEL_ARENA_REMOVAL_SCARAB_SHELL_RED", 		name = "SpeedyWhirligigShell" },
 	
+	--Overload secondaries
+	
+	{ slot = extAttSlot,					key = "_3DOSE3ATTACK", 								name = "ExtremeAttack" },
+	{ slot = extStrSlot,					key = "_3DOSE3STRENGTH", 							name = "ExtremeStrength" },
+	{ slot = extDefSlot,					key = "_3DOSE3DEFENCE", 							name = "ExtremeDefence" },
+	{ slot = extMagSlot,					key = "_3DOSE2MAGIC",								name = "ExtremeMagic" },
+	{ slot = extRanSlot,					key = "_3DOSE2RANGERSPOTION", 						name = "ExtremeRanging" },
+	{ slot = extNecSlot,					key = "_3DOSE3NECROMANCY", 							name = "ExtremeNecromancy" },
+	
+	{ slot = overloadSlot,					key = "_4DOSEOVERLOAD", 							name = "Overload" },
+	{ slot = supAttSlot,					key = "_4DOSE2ATTACK", 								name = "SuperAttack" },
+	{ slot = supStrSlot,					key = "_4DOSE2STRENGTH", 							name = "SuperStrength" },
+	{ slot = supDefSlot,					key = "_4DOSE2DEFENSE", 							name = "SuperDefence" },
+	{ slot = supMagSlot,					key = "_4DOSE1MAGIC",								name = "SuperMagic" },
+	{ slot = supRanSlot,					key = "_4DOSE1RANGERSPOTION", 						name = "SuperRanging" },
+	{ slot = supNecSlot,					key = "_4DOSE2NECROMANCY", 							name = "SuperNecromancy" },
+	{ slot = crystalFlaskSlot,				key = "CRYSTAL_FLASK", 								name = "CrystalFlask" },
+	
+	{ slot = supOverloadSlot,				key = "_6DOSECOMBOSUPREMEOVERLOAD", 				name = "SupremeOverload" },
+	{ slot = supOverloadSalveSlot,			key = "_6DOSE2COMBOSUPREMEOVERLOAD", 				name = "SupremeOverloadSalve" },	
+	
+	{ slot = prayRenSlot,					key = "_4DOSEPRAYERRENEW", 							name = "PrayerRenewal" },
+	{ slot = prayPotSlot,					key = "_4DOSEPRAYERRESTORE",						name = "PrayerPotion" },
+	{ slot = supAntipoisonSlot,				key = "_4DOSE2ANTIPOISON", 							name = "SuperAntipoison" },
+	{ slot = antifireSlot,					key = "_4DOSE1ANTIDRAGON", 							name = "Antifire" },
+	{ slot = supAntifireSlot,				key = "_4DOSE2ANTIDRAGON", 							name = "SuperAntifire" },
+	
+	
 	--Herb seeds
 	{ slot = guamSeedSlot, 					key = "GUAM_SEED", 									name = "GuamSeed", isSeed = true },
 	{ slot = marrentillSeedSlot, 			key = "MARRENTILL_SEED", 							name = "MarrentillSeed", isSeed = true },
@@ -275,6 +312,9 @@ local regularItemsList = {
 	{ slot = uncutRubySlot, 				key = "UNCUT_RUBY", 								name = "Uncut ruby" },
 	{ slot = uncutDiamondSlot, 				key = "UNCUT_DIAMOND", 								name = "Uncut diamond" },
 	{ slot = uncutDragonstoneSlot, 			key = "UNCUT_DRAGONSTONE", 							name = "Uncut dragonstone" },
+	{ slot = redSandstoneSlot, 				key = "BIGPOT_SANDSTONE", 							name = "RedSandstone" },
+	{ slot = crystalSandstoneSlot, 			key = "CRYSTAL_SANDSTONE", 							name = "CrystalSandstone" },
+
 }
 
 --Keys for handling orerbox, gembag and herb sack vars
@@ -524,9 +564,11 @@ function buildTabMetal(page)
 	itemByKey.PLATINUM_ORE.slot 							= oreBox:AddItemSlot(config.Obj.PLATINUM_ORE, 											{ quantity = 0, inline = true, tooltip = "Platinum ore" })
 	itemByKey.CLAY.slot 									= oreBox:AddItemSlot(config.Obj.CLAY, 													{ quantity = 0, inline = true, tooltip = "Clay" })
 	itemByKey.SOFTCLAY.slot 								= oreBox:AddItemSlot(config.Obj.SOFTCLAY, 												{ quantity = 0, inline = true, tooltip = "Soft clay" })
-	itemByKey.PORCELAIN_CLAY.slot 							= oreBox:AddItemSlot(config.Obj.PORCELAIN_CLAY, 										{ quantity = 0, inline = true, tooltip = "PorcelainClay" })
-	itemByKey.PORCELAIN_SOFT_CLAY.slot 						= oreBox:AddItemSlot(config.Obj.PORCELAIN_SOFT_CLAY, 									{ quantity = 0, inline = true, tooltip = "PorcelainSoftClay" })
-	
+	itemByKey.PORCELAIN_CLAY.slot 							= oreBox:AddItemSlot(config.Obj.PORCELAIN_CLAY, 										{ quantity = 0, inline = true, tooltip = "Porcelain Clay" })
+	itemByKey.PORCELAIN_SOFT_CLAY.slot 						= oreBox:AddItemSlot(config.Obj.PORCELAIN_SOFT_CLAY, 									{ quantity = 0, inline = true, tooltip = "PorcelainSoft Clay" })
+	itemByKey.BIGPOT_SANDSTONE.slot 						= oreBox:AddItemSlot(config.Obj.BIGPOT_SANDSTONE, 										{ quantity = 0, inline = true, tooltip = "Red sandstone" })
+	itemByKey.CRYSTAL_SANDSTONE.slot 						= oreBox:AddItemSlot(config.Obj.CRYSTAL_SANDSTONE, 										{ quantity = 0, inline = true, tooltip = "Crystal-flecked sandstone" })
+
 		
 	local barBox = page:AddPanel({ height = 160 })			
 			
@@ -595,18 +637,23 @@ end
 function buildTabBoneAsh(page)			
 	destroyOldTab()			
 			
-	local boneBox = page:AddPanel({ height = 210 })			
+	local boneBox = page:AddPanel({ height = 260 })			
 					
 	boneBox:AddTitle("Bones")			
 			
 	itemByKey.BONES.slot 									= boneBox:AddItemSlot(config.Obj.BONES, 												{ quantity = 0, tooltip = "Bones" })
+	itemByKey.BONES_BURNT.slot 								= boneBox:AddItemSlot(config.Obj.BONES_BURNT, 											{ quantity = 0, inline = true, tooltip = "Burnt bones" })
 	itemByKey.BIG_BONES.slot 								= boneBox:AddItemSlot(config.Obj.BIG_BONES, 											{ quantity = 0, inline = true, tooltip = "Big bones" })
-	itemByKey.DAGANNOTH_KING_BONES.slot 					= boneBox:AddItemSlot(config.Obj.DAGANNOTH_KING_BONES, 									{ quantity = 0, inline = true, tooltip = "Dagannoth bones" })
-	itemByKey.DINOSAUR_BONES.slot 							= boneBox:AddItemSlot(config.Obj.DINOSAUR_BONES, 										{ quantity = 0, inline = true, tooltip = "Dinosaur bones" })
-	itemByKey.HOTM_CREATURE_BONES.slot 						= boneBox:AddItemSlot(config.Obj.HOTM_CREATURE_BONES, 									{ quantity = 0, inline = true, tooltip = "Airut bones" })
-	itemByKey.WYVERN_BONES.slot 							= boneBox:AddItemSlot(config.Obj.WYVERN_BONES, 											{ quantity = 0, inline = true, tooltip = "Wyvern bones" })
+	itemByKey.TBWT_JOGRE_BONES.slot 						= boneBox:AddItemSlot(config.Obj.TBWT_JOGRE_BONES, 										{ quantity = 0, inline = true, tooltip = "Jogre bones" })
+	itemByKey.ZOGRE_ANCESTRAL_BONES_OURG.slot 				= boneBox:AddItemSlot(config.Obj.ZOGRE_ANCESTRAL_BONES_OURG, 							{ quantity = 0, inline = true, tooltip = "Ourg bones" })
 	itemByKey.OURG_BONES.slot 								= boneBox:AddItemSlot(config.Obj.OURG_BONES, 											{ quantity = 0, inline = true, tooltip = "Ourg bones" })
+	itemByKey.HOTM_CREATURE_BONES.slot 						= boneBox:AddItemSlot(config.Obj.HOTM_CREATURE_BONES, 									{ quantity = 0, inline = true, tooltip = "Airut bones" })
+	itemByKey.BAT_BONES.slot 								= boneBox:AddItemSlot(config.Obj.BAT_BONES, 											{ quantity = 0, tooltip = "Bat bones" })
+	itemByKey.WOLF_BONES.slot 								= boneBox:AddItemSlot(config.Obj.WOLF_BONES, 											{ quantity = 0, inline = true, tooltip = "Wolf bones" })
+	itemByKey.DAGANNOTH_KING_BONES.slot 					= boneBox:AddItemSlot(config.Obj.DAGANNOTH_KING_BONES, 									{ quantity = 0, inline = true, tooltip = "Dagannoth bones" })	
+	itemByKey.DINOSAUR_BONES.slot 							= boneBox:AddItemSlot(config.Obj.DINOSAUR_BONES, 										{ quantity = 0, inline = true, tooltip = "Dinosaur bones" })
 	itemByKey.BABYDRAGON_BONES.slot 						= boneBox:AddItemSlot(config.Obj.BABYDRAGON_BONES, 										{ quantity = 0, tooltip = "Baby dragon bones" })
+	itemByKey.WYVERN_BONES.slot 							= boneBox:AddItemSlot(config.Obj.WYVERN_BONES, 											{ quantity = 0, inline = true, tooltip = "Wyvern bones" })
 	itemByKey.DRAGON_BONES.slot 							= boneBox:AddItemSlot(config.Obj.DRAGON_BONES, 											{ quantity = 0, inline = true, tooltip = "Dragon bones" })
 	itemByKey.ADAMANT_DRAGON_BONES.slot						= boneBox:AddItemSlot(config.Obj.ADAMANT_DRAGON_BONES,									{ quantity = 0, inline = true, tooltip = "Hardened dragon bones" })
 	itemByKey.FROST_DRAGON_BONES.slot 						= boneBox:AddItemSlot(config.Obj.FROST_DRAGON_BONES, 									{ quantity = 0, inline = true, tooltip = "Frost dragon bones" })
@@ -614,7 +661,7 @@ function buildTabBoneAsh(page)
 	itemByKey.RUNE_DRAGON_BONES.slot 						= boneBox:AddItemSlot(config.Obj.RUNE_DRAGON_BONES, 									{ quantity = 0, inline = true, tooltip = "Reinforced dragon bones" })
 	itemByKey.DORGESH_CONSTRUCTION_BONE.slot 				= boneBox:AddItemSlot(config.Obj.DORGESH_CONSTRUCTION_BONE, 							{ quantity = 0, tooltip = "Long bone" })
 	itemByKey.DORGESH_CONSTRUCTION_BONE_CURVED.slot 		= boneBox:AddItemSlot(config.Obj.DORGESH_CONSTRUCTION_BONE_CURVED, 						{ quantity = 0, inline = true, tooltip = "Curved bone" })
-	itemByKey.BRUT_BARBARIAN_BONES.slot 					= boneBox:AddItemSlot(config.Obj.BRUT_BARBARIAN_BONES, 									{ quantity = 0, inline = true, tooltip = "Chewed bones" })
+	itemByKey.BRUT_BARBARIAN_BONES.slot 					= boneBox:AddItemSlot(config.Obj.BRUT_BARBARIAN_BONES, 									{ quantity = 0, inline = true, tooltip = "Chewed bones" })	
 		
 	local ashBox = page:AddPanel({ height = 120 })	
 	
@@ -816,7 +863,44 @@ function buildTabSecondaries(page)
 	itemByKey.DUEL_ARENA_REMOVAL_SCARAB_SHELL_PURPLE.slot 	= summSecondariesbBox:AddItemSlot(config.Obj.DUEL_ARENA_REMOVAL_SCARAB_SHELL_PURPLE,	{ quantity = 0, inline = true, tooltip = "Hasty whirligig shell" })
 	itemByKey.DUEL_ARENA_REMOVAL_SCARAB_SHELL_RED.slot 		= summSecondariesbBox:AddItemSlot(config.Obj.DUEL_ARENA_REMOVAL_SCARAB_SHELL_RED, 		{ quantity = 0, inline = true, tooltip = "Speedy whirligig shell" })
 
-	activeTab = { herbSecondariesbBox, summSecondariesbBox }
+
+	local overloadBox = page:AddPanel({ height = 260 })	
+	
+	overloadBox:AddTitle("Overloads")
+
+	--Regular
+	itemByKey._3DOSE3ATTACK.slot 							= overloadBox:AddItemSlot(config.Obj._3DOSE3ATTACK, 							{ quantity = 0, inline = true, tooltip = "Extreme attack (3)" })
+	itemByKey._3DOSE3STRENGTH.slot 							= overloadBox:AddItemSlot(config.Obj._3DOSE3STRENGTH, 							{ quantity = 0, inline = true, tooltip = "Extreme strength (3)" })
+	itemByKey._3DOSE3DEFENCE.slot 							= overloadBox:AddItemSlot(config.Obj._3DOSE3DEFENCE, 							{ quantity = 0, inline = true, tooltip = "Extreme defence (3)" })
+	itemByKey._3DOSE2RANGERSPOTION.slot 					= overloadBox:AddItemSlot(config.Obj._3DOSE2RANGERSPOTION, 						{ quantity = 0, inline = true, tooltip = "Extreme ranging (3)" })
+	itemByKey._3DOSE2MAGIC.slot 							= overloadBox:AddItemSlot(config.Obj._3DOSE2MAGIC, 								{ quantity = 0, inline = true, tooltip = "Extreme magic (3)" })
+	itemByKey._3DOSE3NECROMANCY.slot 						= overloadBox:AddItemSlot(config.Obj._3DOSE3NECROMANCY, 						{ quantity = 0, inline = true, tooltip = "Extreme necromancy (3)" })
+	itemByKey.TORSTOL.slot 									= overloadBox:AddItemSlot(config.Obj.TORSTOL, 									{ quantity = 0, inline = true, tooltip = "Clean torstol" })
+
+	--Supreme
+	itemByKey._4DOSE2ATTACK.slot 							= overloadBox:AddItemSlot(config.Obj._4DOSE2ATTACK, 							{ quantity = 0, tooltip = "Super attack (4)" })
+	itemByKey._4DOSE2STRENGTH.slot 							= overloadBox:AddItemSlot(config.Obj._4DOSE2STRENGTH, 							{ quantity = 0, inline = true, tooltip = "Super strength (4)" })
+	itemByKey._4DOSE2DEFENSE.slot 							= overloadBox:AddItemSlot(config.Obj._4DOSE2DEFENSE, 							{ quantity = 0, inline = true, tooltip = "Super defence (4)" }) 
+	itemByKey._4DOSE1RANGERSPOTION.slot 					= overloadBox:AddItemSlot(config.Obj._4DOSE1RANGERSPOTION, 						{ quantity = 0, inline = true, tooltip = "Super ranging (4)" })
+	itemByKey._4DOSE1MAGIC.slot 							= overloadBox:AddItemSlot(config.Obj._4DOSE1MAGIC, 								{ quantity = 0, inline = true, tooltip = "Super magic (4)" })
+	itemByKey._4DOSE2NECROMANCY.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSE2NECROMANCY, 						{ quantity = 0, inline = true, tooltip = "Super necromancy (4)" })
+	itemByKey._4DOSEOVERLOAD.slot 							= overloadBox:AddItemSlot(config.Obj._4DOSEOVERLOAD, 							{ quantity = 0, inline = true, tooltip = "Overload (4)" })
+	itemByKey.CRYSTAL_FLASK.slot 							= overloadBox:AddItemSlot(config.Obj.CRYSTAL_FLASK, 							{ quantity = 0, inline = true, tooltip = "Crystal Flask" })
+
+	itemByKey._6DOSECOMBOSUPREMEOVERLOAD.slot 				= overloadBox:AddItemSlot(config.Obj._6DOSECOMBOSUPREMEOVERLOAD, 				{ quantity = 0, tooltip = "Supreme Overload (6)" })
+	itemByKey.PRIMAL_EXTRACT.slot 							= overloadBox:AddItemSlot(config.Obj.PRIMAL_EXTRACT, 							{ quantity = 0, inline = true, tooltip = "Primal extract" })
+	itemByKey.FELLSTALK.slot 								= overloadBox:AddItemSlot(config.Obj.FELLSTALK, 								{ quantity = 0, inline = true, tooltip = "Clean fellstalk" })
+	itemByKey._6DOSE2COMBOSUPREMEOVERLOAD.slot 				= overloadBox:AddItemSlot(config.Obj._6DOSE2COMBOSUPREMEOVERLOAD, 				{ quantity = 0, inline = true, tooltip = "Supreme Overload Salve (6)" })
+	
+	itemByKey._4DOSEPRAYERRENEW.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSEPRAYERRENEW, 						{ quantity = 0, tooltip = "Prayer renewal (4)" })
+	itemByKey._4DOSEPRAYERRESTORE.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSEPRAYERRESTORE, 						{ quantity = 0, inline = true, tooltip = "Prayer potion (4)" })
+	itemByKey._4DOSE2ANTIPOISON.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSE2ANTIPOISON, 						{ quantity = 0, inline = true, tooltip = "Super antipoison (4)" })
+	itemByKey._4DOSE1ANTIDRAGON.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSE1ANTIDRAGON, 						{ quantity = 0, inline = true, tooltip = "Antifire (4)" })
+	itemByKey._4DOSE2ANTIDRAGON.slot 						= overloadBox:AddItemSlot(config.Obj._4DOSE2ANTIDRAGON, 						{ quantity = 0, inline = true, tooltip = "Super antifire (4)" })
+
+	
+	
+	activeTab = { herbSecondariesbBox, summSecondariesbBox, overloadBox}
 	addInvToTotals()
 	
 
@@ -936,13 +1020,14 @@ function toggle()
     local parent = ui.Interfaces:GetComponent(id.Component.TOPLEVEL_V2__PLUGIN_BUILD_LAYER_TOP)
 
 	primaryWindow = prettyui.Window.new(parent, {
+		categoryID = 'auto',
 		title = "Banked Resources",
 		x = 40, 
 		y = 240,
 		width = 671,
 		height = 450,
+		scrollable = false,
 		rowBackgroundColours = { 0x24211EFF, 0x2E2825FF },
-		resizable = true,
 		destroyOnClose = true,
 		onClose = function(window)
 			primaryWindow = nil
@@ -950,14 +1035,14 @@ function toggle()
 	})
 
 	local tabs = primaryWindow:AddTabs({ 
-		{ text = "Metals", scrollable = false }, 
-		{ text = "Logs & Planks", scrollable = false }, 
-		{ text = "Bones & Ashes", scrollable = false }, 
-		{ text = "Herbs", scrollable = false },  
-		{ text = "Seeds", scrollable = false },
-		{ text = "Secondaries", scrollable = false },		
+		{ text = "Metals", scrollable = true }, 
+		{ text = "Logs & Planks", scrollable = true }, 
+		{ text = "Bones & Ashes", scrollable = true }, 
+		{ text = "Herbs", scrollable = true },  
+		{ text = "Seeds", scrollable = true },
+		{ text = "Secondaries", scrollable = true },		
 	},
-		{ height = 600, onChange = pageChange
+		{ height = 400, onChange = pageChange
 	})
     
 	--Build our first tab 
